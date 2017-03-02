@@ -1,10 +1,10 @@
 package me.physika.SkyStone;
 
-import java.util.Random;
-
 import org.bukkit.Material;
 import org.bukkit.TreeType;
 import org.bukkit.block.Biome;
+
+import java.util.Random;
 
 public class BiomeDescription {
 	
@@ -272,7 +272,7 @@ public class BiomeDescription {
         extreme_hills.pondWaterChance = 0.0;
         extreme_hills.pondLavaChance = 0.0;
         extreme_hills.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
+        extreme_hills.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
         extreme_hills.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -294,8 +294,8 @@ public class BiomeDescription {
         extreme_hills_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.islandSurfaceMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
-        extreme_hills_mountains.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+        extreme_hills_mountains.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_mountains.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
         
@@ -314,8 +314,8 @@ public class BiomeDescription {
         extreme_hills_plus.pondWaterChance = 0.0;
         extreme_hills_plus.pondLavaChance = 0.0;
         extreme_hills_plus.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
-        extreme_hills_plus.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+        extreme_hills_plus.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_plus.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_plus.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_plus.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
         
@@ -336,8 +336,8 @@ public class BiomeDescription {
         extreme_hills_plus_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_plus_mountains.islandSurfaceMaterial = (byte)Material.GRAVEL.getId();
         extreme_hills_plus_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005};  
-        extreme_hills_plus_mountains.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+        extreme_hills_plus_mountains.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_plus_mountains.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_plus_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_plus_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
 		
@@ -897,77 +897,10 @@ public class BiomeDescription {
 		
 	}
 	
-	
-	public static BiomeDescription getDescription(Biome mcBiome) {
-		switch(mcBiome) {
-			case BEACH: return beach;
-			case BIRCH_FOREST: return birch_forest;
-			case BIRCH_FOREST_HILLS: return birch_forest_hills;
-			case BIRCH_FOREST_HILLS_MOUNTAINS: return birch_forest_hills_mountains;
-			case BIRCH_FOREST_MOUNTAINS: return birch_forest_mountains;
-			case COLD_BEACH: return cold_beach;
-			case COLD_TAIGA: return cold_taiga;
-			case COLD_TAIGA_HILLS: return cold_taiga_hills;
-			case COLD_TAIGA_MOUNTAINS: return cold_taiga_mountains;
-			case DEEP_OCEAN: return deep_ocean;
-			case DESERT: return desert;
-			case DESERT_HILLS: return desert_hills;
-			case DESERT_MOUNTAINS: return desert_mountains;
-			case EXTREME_HILLS: return extreme_hills;
-			case EXTREME_HILLS_MOUNTAINS: return extreme_hills_mountains;
-			case EXTREME_HILLS_PLUS: return extreme_hills_plus;
-			case EXTREME_HILLS_PLUS_MOUNTAINS: return extreme_hills_plus_mountains;
-			case FLOWER_FOREST: return flower_forest;
-			case FOREST: return forest;
-			case FOREST_HILLS: return forest_hills;
-			case FROZEN_OCEAN: return frozen_ocean;
-			case FROZEN_RIVER: return frozen_river;
-			case HELL: return hell;
-			case ICE_MOUNTAINS: return ice_mountains;
-			case ICE_PLAINS: return ice_plains;
-			case ICE_PLAINS_SPIKES: return ice_plains_spikes;
-			case JUNGLE: return jungle;
-			case JUNGLE_EDGE: return jungle_edge;
-			case JUNGLE_EDGE_MOUNTAINS: return jungle_edge_mountains;
-			case JUNGLE_HILLS: return jungle_hills;
-			case JUNGLE_MOUNTAINS: return jungle_mountains;
-			case MEGA_SPRUCE_TAIGA: return mega_spruce_taiga;
-			case MEGA_SPRUCE_TAIGA_HILLS: return mega_spruce_taiga_hills;
-			case MEGA_TAIGA: return mega_taiga;
-			case MEGA_TAIGA_HILLS: return mega_taiga_hills;
-			case MESA: return mesa;
-			case MESA_BRYCE: return mesa_bryce;
-			case MESA_PLATEAU: return mesa_plateau;
-			case MESA_PLATEAU_FOREST: return mesa_plateau_forest;
-			case MESA_PLATEAU_FOREST_MOUNTAINS: return mesa_plateau_forest_mountains;
-			case MESA_PLATEAU_MOUNTAINS: return mesa_plateau_mountains;
-			case MUSHROOM_ISLAND: return mushroom_island;
-			case MUSHROOM_SHORE: return mushroom_shore;
-			case OCEAN: return ocean;
-			case PLAINS: return plains;
-			case RIVER: return river;
-			case ROOFED_FOREST: return roofed_forest;
-			case ROOFED_FOREST_MOUNTAINS: return roofed_forest_mountains;
-			case SAVANNA: return savanna;
-			case SAVANNA_PLATEAU: return savanna_plateau;
-			case SAVANNA_PLATEAU_MOUNTAINS: return savanna_plateau_mountains;
-			case SKY: return sky;
-			case SMALL_MOUNTAINS: return small_mountains;
-			case STONE_BEACH: return stone_beach;
-			case SUNFLOWER_PLAINS: return sunflower_plains;
-			case SWAMPLAND: return swampland;
-			case SWAMPLAND_MOUNTAINS: return swampland_mountains;
-			case TAIGA: return taiga;
-			case TAIGA_HILLS: return taiga_hills;
-			case TAIGA_MOUNTAINS: return taiga_mountains;
-			default : return standard;
-		}
-	}
-	
 	/********************************************************************************************************\
 	 *********** ALL OF THE ATTRIBUTES ARE BASED PER BIOME, BELOW ARE DEFAULTS, ABOVE ARE SPECIFICS *********
 	\********************************************************************************************************/
-	
+
 	//Basic Island Appearance
 	public double chanceOfIsland = 0.15; 			//Chance of this type of island to appear centered in any given chunk
 	public int islandSizeMin = 70;					//Minimum lateral size of the island
@@ -975,11 +908,10 @@ public class BiomeDescription {
 	public double islandSquareRegularity = 0.5;		//Coefficient of squareness (totally made this up but it works)
 	public int islandHeightMin = 20;				//Minimum vertical size of the island
 	public int islandHeightMax = 128;				//Maximum vertical size of the island
-	public double islandHeightRatio = 0.45;			//Ratio of height attributed to size 
-	public double islandHeightRegularity = 1.0;		//Coefficient of height according to the calculated ratio
+    public double islandHeightRatio = 0.45;            //Ratio of height attributed to size
+    public double islandHeightRegularity = 1.0;		//Coefficient of height according to the calculated ratio
 	public int islandAltitudeMin = 16;				//Minimum spawn altitude (adjusted by height of the island)
 	public int islandAltitudeMax = 128;				//Maximum spawn altitude (adjusted by height of the island)
-	
 	//Island Composition
 	public byte islandRockMaterial = (byte) Material.STONE.getId();		//Material to fill the bottom of the island with (stone)
 	public byte islandSoilMaterial = (byte) Material.DIRT.getId();		//Material to fill the top layers of the island with (dirt)
@@ -988,75 +920,187 @@ public class BiomeDescription {
 	public byte islandLakeBedDirt = (byte) Material.SAND.getId();		//Material to mix into the beach material in swamps mostly (dirt)
 	public byte islandFluidMaterial = (byte) Material.WATER.getId();	//Material to use for lakes
 	public byte islandSnowMaterial = (byte) Material.SNOW.getId();		//Material to use for snow (always snow?)
-	
 	//Terrain Features
 	public double lakeChance = 0.1;			//Chance of a lake occurring
 	public boolean snow = false;			//Snow?
 	public boolean cliffs = false;			//Cliffs?
 	public int cliffHeightMin = 4;			//Minimum cliff height
-	public int cliffHeightMax = 8;			//Maximum cliff height 
-	public double roughness = 8.0;			//Roughness, double amplitude of surface noise
+    public int cliffHeightMax = 8;            //Maximum cliff height
+    public double roughness = 8.0;			//Roughness, double amplitude of surface noise
 	public double frequency = 0.5;			//Frequency of surface noise
 	public double islandSoilDepth = 0.3;	//Top percentage of the island to be made of soil
 	public double pondWaterChance = 0.0002;	//Water pond chance, rolled for each block on the surface of the island
 	public double pondLavaChance = 0.0001;	//Lava pond chance, rolled for each stone block with a caveSpace material above it
-	
 	//Plant life
 	public double treeDensity = 0.03;		//Chance of a tree, rolled for each surface grass
-	
 	public TreeType[] treeType = new TreeType[] {TreeType.TREE, TreeType.BIG_TREE};	//Type of tree
 	public double[] treeTypeChance = new double[] {0.8, 0.2};						//Chance for each type (same size as treeType[])
-	
 	public double reedDensity = 0.1;		//Reed density, rolled only for sand or grass blocks near water
 	public int readClusterMin = 2;			//Minimum cluster size for reeds
 	public int readClusterMax = 5;			//Maximum cluster size for reeds
-	
 	public double cactusDensity = 0.0;		//Cactus density, rolled for any sand block on the surface
-	
 	public double shrubDensity = 0.02;							//Chance of a shrub, rolled for each surface grass or sand block
 	public byte[] shrubType = new byte[] {1, 2};				//Type of shrub (0 is dried bush, 1 is grass, 2 is fern)
 	public double[] shrubTypeChance = new double[] {0.7, 0.3};	//Chance for the given type, rolled after shrub is guaranteed
-	
 	public double flowerDensity = 0.02;				//Flower cluster density, roll per surface grass block
 	public byte[] flowerType = new byte[] {1, 2};		 //1-dandelion, 2-poppy, 3-blue orchid,  4-allium, 5-azure bluet, 6-red tulip, 7-orange tulip, 8-white tulip, 9-pink tulip, 10-oxeye daisy
 	public double[] flowerTypeChance = new double[] {0.5, 0.5};	//Chance for the given type, rolled after flower is guaranteed
 	public int flowerClusterMin = 3;				//Flower cluster minimum size
 	public int flowerClusterMax = 7;				//Flower cluster maximum size
-	
 	public double mushroomDensity = 0.0;			//Mushroom cluster density, roll per surface grass block
 	public double mushroomClusterIsRedChance = 0.4;	//Chance for cluster to be red, rolled after cluster is guaranteed
 	public int mushroomClusterMin = 3;				//Mushroom cluster minimum size
 	public int mushroomClusterMax = 5;				//Mushroom cluster maximum size
-	
 	public double watermelonDensity = 0.0;	//Water melon cluster density, rolled per surface grass block
 	public int watermelonClusterMin = 3;	//Cluster minimum size
 	public int watermelonClusterMax = 5;	//Cluster maximum size
-	
 	public double pumpkinDensity = 0.0;		//Pumpkin cluster density, rolled per surface grass block
 	public int pumpkinClusterMin = 3;		//Cluster minimum size
 	public int pumpkinClusterMax = 5;		//Cluster maximum size
-	
 	//Cave features (don't mess with these and expect it to look good)
 	public CaveDescription caveDescription = new CaveDescription();
-	private double chanceOfCave = 1.0;
-	
 	//Extras
 	public double liquidFallChance = 0.001;	//Chance of a lava or water fall, rolled per underground stone with exactly one air adjacent
 	public double lavaFallChance = 0.00001;		//Chance that the liquid fall is lava, rolled after liquid fall is guaranteed
-	
 	public double boulderDensity = 0.0;	//Mossy Cobblestone cluster density, rolled per surface podzol block (Mega Taiga only)
 	public int boulderClusterMin = 3;	//Cluster minimum size
 	public int boulderClusterMax = 5;	//Cluster maximum size
-	
 	//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, granite, dirorite, andesite}
 	public byte[] oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 43, 95, 35};							//Had to use block IDs because it was being stupid (see above list)
 	public double[] oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.002, 0.002, 0.002}; //Chance of each ore spawning
 	public double[] oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};					//Minimum percentage depth to spawn each ore
 	public int[] oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 5, 5, 5};										//Minimum vein size of each ore
 	public int[] oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 16, 16, 16};									//Maximum vein size of each ore
-	
-	
-	public boolean rollIsland(Random random) {
+    private double chanceOfCave = 1.0;
+
+    public static BiomeDescription getDescription(Biome mcBiome) {
+        switch (mcBiome) {
+            case BEACH:
+                return beach;
+            case BIRCH_FOREST:
+                return birch_forest;
+            case BIRCH_FOREST_HILLS:
+                return birch_forest_hills;
+            case BIRCH_FOREST_HILLS_MOUNTAINS:
+                return birch_forest_hills_mountains;
+            case BIRCH_FOREST_MOUNTAINS:
+                return birch_forest_mountains;
+            case COLD_BEACH:
+                return cold_beach;
+            case COLD_TAIGA:
+                return cold_taiga;
+            case COLD_TAIGA_HILLS:
+                return cold_taiga_hills;
+            case COLD_TAIGA_MOUNTAINS:
+                return cold_taiga_mountains;
+            case DEEP_OCEAN:
+                return deep_ocean;
+            case DESERT:
+                return desert;
+            case DESERT_HILLS:
+                return desert_hills;
+            case DESERT_MOUNTAINS:
+                return desert_mountains;
+            case EXTREME_HILLS:
+                return extreme_hills;
+            case EXTREME_HILLS_MOUNTAINS:
+                return extreme_hills_mountains;
+            case EXTREME_HILLS_PLUS:
+                return extreme_hills_plus;
+            case EXTREME_HILLS_PLUS_MOUNTAINS:
+                return extreme_hills_plus_mountains;
+            case FLOWER_FOREST:
+                return flower_forest;
+            case FOREST:
+                return forest;
+            case FOREST_HILLS:
+                return forest_hills;
+            case FROZEN_OCEAN:
+                return frozen_ocean;
+            case FROZEN_RIVER:
+                return frozen_river;
+            case HELL:
+                return hell;
+            case ICE_MOUNTAINS:
+                return ice_mountains;
+            case ICE_PLAINS:
+                return ice_plains;
+            case ICE_PLAINS_SPIKES:
+                return ice_plains_spikes;
+            case JUNGLE:
+                return jungle;
+            case JUNGLE_EDGE:
+                return jungle_edge;
+            case JUNGLE_EDGE_MOUNTAINS:
+                return jungle_edge_mountains;
+            case JUNGLE_HILLS:
+                return jungle_hills;
+            case JUNGLE_MOUNTAINS:
+                return jungle_mountains;
+            case MEGA_SPRUCE_TAIGA:
+                return mega_spruce_taiga;
+            case MEGA_SPRUCE_TAIGA_HILLS:
+                return mega_spruce_taiga_hills;
+            case MEGA_TAIGA:
+                return mega_taiga;
+            case MEGA_TAIGA_HILLS:
+                return mega_taiga_hills;
+            case MESA:
+                return mesa;
+            case MESA_BRYCE:
+                return mesa_bryce;
+            case MESA_PLATEAU:
+                return mesa_plateau;
+            case MESA_PLATEAU_FOREST:
+                return mesa_plateau_forest;
+            case MESA_PLATEAU_FOREST_MOUNTAINS:
+                return mesa_plateau_forest_mountains;
+            case MESA_PLATEAU_MOUNTAINS:
+                return mesa_plateau_mountains;
+            case MUSHROOM_ISLAND:
+                return mushroom_island;
+            case MUSHROOM_SHORE:
+                return mushroom_shore;
+            case OCEAN:
+                return ocean;
+            case PLAINS:
+                return plains;
+            case RIVER:
+                return river;
+            case ROOFED_FOREST:
+                return roofed_forest;
+            case ROOFED_FOREST_MOUNTAINS:
+                return roofed_forest_mountains;
+            case SAVANNA:
+                return savanna;
+            case SAVANNA_PLATEAU:
+                return savanna_plateau;
+            case SAVANNA_PLATEAU_MOUNTAINS:
+                return savanna_plateau_mountains;
+            case SKY:
+                return sky;
+            case SMALL_MOUNTAINS:
+                return small_mountains;
+            case STONE_BEACH:
+                return stone_beach;
+            case SUNFLOWER_PLAINS:
+                return sunflower_plains;
+            case SWAMPLAND:
+                return swampland;
+            case SWAMPLAND_MOUNTAINS:
+                return swampland_mountains;
+            case TAIGA:
+                return taiga;
+            case TAIGA_HILLS:
+                return taiga_hills;
+            case TAIGA_MOUNTAINS:
+                return taiga_mountains;
+            default:
+                return standard;
+        }
+    }
+
+    public boolean rollIsland(Random random) {
 		return random.nextDouble() < chanceOfIsland;
 	}
 	
