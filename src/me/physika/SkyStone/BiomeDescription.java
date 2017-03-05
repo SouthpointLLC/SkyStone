@@ -7,7 +7,10 @@ import org.bukkit.block.Biome;
 import java.util.Random;
 
 public class BiomeDescription {
-	
+
+    //Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
+    private static double[] ORE_GEN_CHANGES = new double[]{0.002, 0.000001, 0.005, 0.001, 0.000001, 0.000001, 0.0008, 0.0005, 0.0000005};
+
 	private static BiomeDescription standard = new BiomeDescription();
 	private static BiomeDescription beach = new BiomeDescription();
 	private static BiomeDescription birch_forest = new BiomeDescription();
@@ -271,8 +274,8 @@ public class BiomeDescription {
         extreme_hills.shrubTypeChance = (new double[] {0.7, 0.3});
         extreme_hills.pondWaterChance = 0.0;
         extreme_hills.pondLavaChance = 0.0;
-        extreme_hills.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills.oreTypeMaterial = new byte[]{13, 16, 15, 14, 73, 21, 56, 35, 23, 97};
+        extreme_hills.oreTypeChance = ORE_GEN_CHANGES;
         extreme_hills.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -294,11 +297,11 @@ public class BiomeDescription {
         extreme_hills_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.islandSurfaceMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_mountains.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_mountains.oreTypeChance = ORE_GEN_CHANGES;
         extreme_hills_mountains.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-        extreme_hills_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
+        extreme_hills_mountains.oreTypeVeinMin = new int[]{5, 6, 4, 3, 5, 3, 2, 1, 1};
         extreme_hills_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
-        
+
 		//Extreme Hills Plus
         extreme_hills_plus.treeDensity = 0.03;
         extreme_hills_plus.treeType = (new TreeType[] {TreeType.TREE, TreeType.REDWOOD});
@@ -314,12 +317,12 @@ public class BiomeDescription {
         extreme_hills_plus.pondWaterChance = 0.0;
         extreme_hills_plus.pondLavaChance = 0.0;
         extreme_hills_plus.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_plus.oreTypeChance = ORE_GEN_CHANGES;
         extreme_hills_plus.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-        extreme_hills_plus.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
+        extreme_hills_plus.oreTypeVeinMin = new int[]{5, 6, 4, 3, 5, 3, 2, 1, 1};
         extreme_hills_plus.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
-        
-		//Extreme Hills Plus Mountains
+
+        //Extreme Hills Plus Mountains
         extreme_hills_plus_mountains.treeDensity = 0.03;
         extreme_hills_plus_mountains.treeType = (new TreeType[] {TreeType.TREE, TreeType.REDWOOD});
         extreme_hills_plus_mountains.treeTypeChance = (new double[] {0.8, 0.2});
@@ -336,7 +339,7 @@ public class BiomeDescription {
         extreme_hills_plus_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_plus_mountains.islandSurfaceMaterial = (byte)Material.GRAVEL.getId();
         extreme_hills_plus_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus_mountains.oreTypeChance = new double[]{0.002, 0.0001, 0.0025, 0.001, 0.0001, 0.0001, 0.0009, 0.0003, 0.00005};
+        extreme_hills_plus_mountains.oreTypeChance = ORE_GEN_CHANGES;
         extreme_hills_plus_mountains.oreTypeMinDepth = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_plus_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_plus_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
