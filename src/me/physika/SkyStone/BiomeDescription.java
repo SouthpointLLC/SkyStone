@@ -9,7 +9,7 @@ import java.util.Random;
 public class BiomeDescription {
 
     //Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-    private static double[] ORE_GEN_CHANGES = new double[]{0.002, 0.000001, 0.005, 0.001, 0.000001, 0.000001, 0.0008, 0.0005, 0.0000005};
+    private static double[] ORE_GEN_CHANGES = new double[]{0.002, 0, 0.005, 0.004, 0, 0, 0.001, 0.0009, 0};
 
 	private static BiomeDescription standard = new BiomeDescription();
 	private static BiomeDescription beach = new BiomeDescription();
