@@ -210,7 +210,7 @@ public class BiomeDescription {
         deep_ocean.chanceOfCave = 0.0;
 		
 		//Desert
-	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.STONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
@@ -227,7 +227,7 @@ public class BiomeDescription {
         desert.lavaFallChance = 0.0;
         
 		//Desert Hills
-	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.STONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
@@ -244,7 +244,7 @@ public class BiomeDescription {
         desert.lavaFallChance = 0.0;
         
 		//Desert Mountains
-	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.STONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
