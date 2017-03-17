@@ -969,8 +969,8 @@ public class BiomeDescription {
 	public int boulderClusterMin = 3;	//Cluster minimum size
 	public int boulderClusterMax = 5;	//Cluster maximum size
 	//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, granite, dirorite, andesite}
-	public byte[] oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 43, 95, 35};							//Had to use block IDs because it was being stupid (see above list)
-	public double[] oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.002, 0.002, 0.002}; //Chance of each ore spawning
+    public byte[] oreTypeMaterial = new byte[]{13, 15, 15, 14, 56, 14, 56, 43, 95, 35};                            //Had to use block IDs because it was being stupid (see above list)
+    public double[] oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.002, 0.002, 0.002}; //Chance of each ore spawning
 	public double[] oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};					//Minimum percentage depth to spawn each ore
 	public int[] oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 5, 5, 5};										//Minimum vein size of each ore
 	public int[] oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 16, 16, 16};									//Maximum vein size of each ore
