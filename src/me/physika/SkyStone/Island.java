@@ -1,48 +1,17 @@
 package me.physika.SkyStone;
 
-import java.awt.Point;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
-
 import org.bukkit.Material;
 import org.bukkit.TreeType;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
 import org.bukkit.util.noise.SimplexOctaveGenerator;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
 public class Island extends Schematic {
-	
-	/**
-	 * Creates an island at the given chunk position
-	 * @param gen - plugin to report all output to 
-	 * @param world - world to generate in 
-	 * @param random - random generator for generation 
-	 * @param chunkX - chunk position
-	 * @param chunkZ - chunk position
-	 * @return
-	 */
-	public static Island createIsland(SkyStoneGenerator gen, World world, Random random, int chunkX, int chunkZ) {
-		
-		Biome mcBiome = world.getBiome(chunkX*16+8, chunkZ*16+8);
-		BiomeDescription biome = BiomeDescription.getDescription(mcBiome);
-		
-		if(!biome.rollIsland(random) && !(chunkX == 0 && chunkZ == 0)) return null;
-		Int3D size = null;
-		Int3D position = null;
-		if(chunkX == 0 && chunkZ == 0) {
-			biome = BiomeDescription.getDescription(Biome.FOREST);
-			size = new Int3D(128, 64, 128);
-			position = new Int3D(-56, 48, -56);
-			gen.spawn = new Int3D(0, (int) (position.y+size.y-biome.roughness), 0);
-		} else {
-			size = biome.getDimensions(random);
-			position = biome.getPosition(random, chunkX, chunkZ, size);
-		}
-		
-		return new Island(biome, random, position, size);
-		
-	}
 	
 	private static final byte grass = (byte) Material.GRASS.getId();
 	private static final byte dirt = (byte) Material.DIRT.getId();
@@ -63,7 +32,6 @@ public class Island extends Schematic {
 	private static final byte watermelon = (byte) Material.MELON_BLOCK.getId();
 	private static final byte coalBlock = (byte) Material.COAL_BLOCK.getId();
 	private static final byte mycelium = (byte) Material.MYCEL.getId();
-		
 	protected int centerX;
 	protected int centerY;
 	protected int centerZ;
@@ -76,26 +44,25 @@ public class Island extends Schematic {
 	protected double[][] heightCoefficients;
 	protected BiomeDescription biome;
 	protected int islandMass = 0;
-	
 	/**
 	 * Constructs and therefore generates an island. These parameters are hard to fill so
 	 * use the Island.createIsland() method instead.
 	 * @param biome - BiomeDescription returned from BiomeDescription.getDescription()
 	 * @param random - random object used for generation (dependent on the world seed and chunk position)
 	 * @param position - position of the island's center block
-	 * @param size - size of the island  
+	 * @param size - size of the island
 	 */
 	public Island(BiomeDescription biome, Random random, Int3D position, Int3D size) {
 		super(position.x, position.y, position.z, size.x, size.y, size.z);
-		
+
 		this.biome = biome;
-		
+
 		this.random = random;
-		
+
 		this.centerX = this.length / 2;
 		this.centerZ = this.bredth / 2;
 		this.centerY = this.height - biome.getAirSpace();
-		
+
 		generateIslandForm();			//Generates topographical shape
 		calculateHeightCoefficients();	//Calculates lots of useful data
 		generateIslandTerrain();		//Main terrain generation
@@ -104,7 +71,39 @@ public class Island extends Schematic {
 		supportFallingMaterials();		//Supports any flowing or falling materials
 		populatePlants();				//Trees and shrubs
 		addExtras();					//Lava falls, water falls, and ores
-		
+
+	}
+
+	/**
+	 * Creates an island at the given chunk position
+	 *
+	 * @param gen    - plugin to report all output to
+	 * @param world  - world to generate in
+	 * @param random - random generator for generation
+	 * @param chunkX - chunk position
+	 * @param chunkZ - chunk position
+	 * @return
+	 */
+	public static Island createIsland(SkyStoneGenerator gen, World world, Random random, int chunkX, int chunkZ) {
+
+		Biome mcBiome = world.getBiome(chunkX * 16 + 8, chunkZ * 16 + 8);
+		BiomeDescription biome = BiomeDescription.getDescription(mcBiome);
+
+		if (!biome.rollIsland(random) && !(chunkX == 0 && chunkZ == 0)) return null;
+		Int3D size = null;
+		Int3D position = null;
+		if (chunkX == 0 && chunkZ == 0) {
+			biome = BiomeDescription.getDescription(Biome.FOREST);
+			size = new Int3D(128, 64, 128);
+			position = new Int3D(-56, 48, -56);
+			gen.spawn = new Int3D(0, (int) (position.y + size.y - biome.roughness), 0);
+		} else {
+			size = biome.getDimensions(random);
+			position = biome.getPosition(random, chunkX, chunkZ, size);
+		}
+
+		return new Island(biome, random, position, size);
+
 	}
 
 	/**
@@ -835,17 +834,7 @@ public class Island extends Schematic {
 	 * @param type
 	 */
 	private void placeShrub(int x, int y, int z, byte type) {
-		switch(type) {
-			case 0:
-				setBlock(x, y, z, (byte) Material.CHEST.getId());
-				return;
-			case 1:
-				setBlock(x, y, z, (byte) Material.WORKBENCH.getId());
-				return;
-			case 2:
-				setBlock(x, y, z, (byte) Material.FURNACE.getId());
-				return;
-		}
+
 	}
 	
 	/**

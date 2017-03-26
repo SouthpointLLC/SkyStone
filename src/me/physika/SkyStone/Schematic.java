@@ -5,6 +5,25 @@ import org.bukkit.Material;
 public class Schematic
 {
 
+    protected static final byte caveSpace;
+    public static int maxSchematicChunkSize = 16;
+
+    static {
+        caveSpace = (byte) Material.MOSSY_COBBLESTONE.getId();
+    }
+
+    protected int length;
+    protected int bredth;
+    protected int height;
+    protected byte blocks[];
+    private int x;
+    private int y;
+    private int z;
+    private int chunkXMin;
+    private int chunkXMax;
+    private int chunkZMin;
+    private int chunkZMax;
+    private boolean chunkComplete[][];
     public Schematic(int x, int y, int z, int length, int height, int bredth)
     {
         this.length = 0;
@@ -141,25 +160,5 @@ public class Schematic
     {
         if(chunkX >= chunkXMin && chunkX <= chunkXMax && chunkZ >= chunkZMin && chunkZ <= chunkZMax)
             chunkComplete[chunkX - chunkXMin][chunkZ - chunkZMin] = true;
-    }
-
-    protected static final byte caveSpace;
-    public static int maxSchematicChunkSize = 16;
-    protected int length;
-    protected int bredth;
-    protected int height;
-    private int x;
-    private int y;
-    private int z;
-    private int chunkXMin;
-    private int chunkXMax;
-    private int chunkZMin;
-    private int chunkZMax;
-    private boolean chunkComplete[][];
-    protected byte blocks[];
-
-    static 
-    {
-        caveSpace = (byte)Material.EMERALD_BLOCK.getId();
     }
 }
